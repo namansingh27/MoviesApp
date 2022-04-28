@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 
 export class Banner extends Component {
   render() {
+    let backDrop =  '/6EdKBYkB1ssgGjc249ud1L5508d.jpg'
     return (
        <div className="card banner-card" >
        <img src="https://d2kektcjb0ajja.cloudfront.net/images/posts/feature_images/000/000/072/large-1466557422-feature.jpg?1466557422" className="card-img-top banner-img" alt="..."/>

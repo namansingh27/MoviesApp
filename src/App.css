@@ -96,8 +96,8 @@
 
 .movie-title{
   position : absolute;
-  /* top : 1rem;
-  left : 1rem; */
+  top : 1rem;
+  left : 1rem;
 }
 
 .movies-button{
@@ -107,8 +107,8 @@
 
 }
 
-.card-title{
+/* .card-title{
   margin-bottom: 0.5rem;
   position: absolute;
   color: white;
-}
+} */
