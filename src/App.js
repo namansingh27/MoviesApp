@@ -5,16 +5,29 @@ import Favourites from "./components/Favourites";
 
 import './App.css'
 
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+
 
 
 function App() {
   return (
-    <>
-    <NavBar/>
-    {/* <Banner/>
-    <MovieList/> */}
-    <Favourites/>
-    </>
+    <BrowserRouter>
+     <NavBar/>
+
+     <Routes>
+       <Route path="/" element={
+         <><Banner/><MovieList/></>
+       }>
+
+       </Route>
+
+       <Route path="/favourites" element={<Favourites/>}/>
+     </Routes>
+
+    </BrowserRouter>
+  
+   
+    
     
 
   );
