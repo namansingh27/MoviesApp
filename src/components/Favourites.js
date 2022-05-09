@@ -143,8 +143,8 @@ export class Favourites extends Component {
                     <th></th>
                     <th scope="col">Title</th>
                     <th scope="col">Genre</th>
-                    <th scope="col">Popularity</th>
-                    <th scope="col">Ratings</th>
+                    <th scope="col"><i class="fa-solid fa-sort-up"></i>Popularity<i class="fa-solid fa-sort-down"></i></th>
+                    <th scope="col"><i class="fa-solid fa-sort-up"></i>Ratings<i class="fa-solid fa-sort-down"></i></th>
                     <th></th>
                   </tr>
                 </thead>
