@@ -90,7 +90,7 @@ export class Favourites extends Component {
     else{
       filterArr = this.state.movies.filter((movieObj)=>{
         let title = movieObj.original_title.toLowerCase();
-        return title.includes(this.state.currText.toLowerCase())
+        return title.includes(this.state.currText.toLowerCase().trim())
       })
     }
     
