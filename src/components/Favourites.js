@@ -58,6 +58,17 @@ export class Favourites extends Component {
          })
   }
 
+  setPopularityDesc=()=>{
+    let temp=this.state.movies
+    temp.sort(function(objA,objB){
+      return objB.popularity-objA.popularity
+    })
+
+    this.setState({
+      movies:[...temp]
+    })
+  }
+
   render() {
     let genreids = {
       28: "Action",
@@ -143,7 +154,7 @@ export class Favourites extends Component {
                     <th></th>
                     <th scope="col">Title</th>
                     <th scope="col">Genre</th>
-                    <th scope="col"><i class="fa-solid fa-sort-up"></i>Popularity<i class="fa-solid fa-sort-down"></i></th>
+                    <th scope="col"><i class="fa-solid fa-sort-up" onClick={this.sortPopularityDesc}></i>Popularity<i class="fa-solid fa-sort-down"></i></th>
                     <th scope="col"><i class="fa-solid fa-sort-up"></i>Ratings<i class="fa-solid fa-sort-down"></i></th>
                     <th></th>
                   </tr>
